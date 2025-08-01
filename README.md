@@ -17,12 +17,12 @@ The project is divided into tasks focusing on TCS3200 sensor interfacing and UAR
 
 ## **Project Structure**
 
-- `tcs_3200.v`: Verilog module for TCS3200 color sensor interfacing (`t1b_cd_fd`).
+- `tcs_3200.v`: Verilog module for TCS3200 color sensor interfacing.
 - `uart_tx.v`: Verilog module for UART transmitter.
-- `uart_rx1.v`: Verilog module for UART receiver.
-- `uart_tx_tb.v`: Testbench for UART transmitter.
-- `uart_rx_text.v`: Testbench for UART receiver.
-- `soc_color_detection_tb.v`: Testbench for the color detection system (**uneditable reference**).
+- `uart_rx.v`: Verilog module for UART receiver.
+- `tb2`: Testbench for UART transmitter.
+- `tb3`: Testbench for UART receiver.
+- `tb1`: Testbench for the color detection system.
 - `results.txt`: Output file for testbench results.
 
 ---
