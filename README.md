@@ -1,4 +1,4 @@
-# **Bluetooth-Operated Color Detection System**
+# **Color Detection using TCS3200 and UART**
 
 ## **Overview**
 This project implements a Verilog-based system to detect the color of an object using the **TCS3200** color sensor and transmit the detected color data via **UART communication**. The design integrates a **Bluetooth module** for wireless communication, with the entire system validated through simulation in **Vivado**.
