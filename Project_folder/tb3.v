@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module tb;
+module tb3;
 
 reg clk_3125 = 0, rx;
 wire [7:0] rx_msg;
@@ -20,7 +20,7 @@ integer counter = 0;
 reg [(10*11)-1:0] str; //10 chars can be stored
 reg flag = 0;
 
-uart_rx1 uut(.clk_3125(clk_3125), .rx(rx), .rx_msg(rx_msg), .rx_parity(rx_parity), .rx_complete(rx_complete));
+uart_rx uut(.clk_3125(clk_3125), .rx(rx), .rx_msg(rx_msg), .rx_parity(rx_parity), .rx_complete(rx_complete));
 
 always begin
 	clk_3125 = ~clk_3125; #160;
