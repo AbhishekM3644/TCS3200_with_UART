@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module t1b_cd_fd(
+module tcs_3200(
     input clk_1MHz,
     input cs_out,
     output reg [1:0] filter,
