@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module uart_rx1 (
+module uart_rx(
     input wire clk_3125,
     input wire rx, 
     output reg [7:0] rx_msg,
