@@ -23,7 +23,7 @@ module top_module (
      // pad remaining bits with 0
      // For now, always transmitting (can be modified for FSM)
 
-    t1b_cd_fd tcs_module (
+    tcs_3200 tcs_module (
         .clk_1MHz(clk_1MHz),
         .cs_out(cs_out),
         .filter(filter),       
@@ -40,7 +40,7 @@ module top_module (
         .tx_done(tx_done)
     );
 
-    uart_rx1 rx_module (
+    uart_rx rx_module (
         .clk_3125(clk_3125),
         .rx(tx),                    // Loopback connection
         .rx_msg(rx_msg),
