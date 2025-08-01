@@ -16,7 +16,7 @@ reg [2:0] i, j;
 integer fw;
 integer tp, k, l, m, counter;
 
-t1b_cd_fd uut (
+tcs_3200 uut (
     .clk_1MHz(clk_1MHz), .cs_out(cs_out),
     .filter(filter), .color(color)
 );
