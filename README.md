@@ -28,19 +28,17 @@ The project is divided into tasks focusing on TCS3200 sensor interfacing and UAR
 
 ---
 
-## **Tasks Overview**
+### *Task 1: TCS3200 Color Sensor Interfacing*
 
-### **Task 1: TCS3200 Color Sensor Interfacing**
-
-- **Description**: Interface the TCS3200 color sensor using Verilog.
-- **Implementation**:  
-  - Configure the **S2** and **S3** control signals to cycle through **Red**, **Green**, and **Blue** filters.
-  - Measure the frequency of the sensor's PWM output (**OUT** pin) for each filter and detect the corresponding color.
-- **Module**: `t1b_cd_fd`  
-  - **Inputs**: `clk_1MHz`, `cs_out`  
-  - **Outputs**: `filter[1:0]`, `color[1:0]`
-- **Testbench**: `soc_color_detection_tb.v`
-- **Deliverable**: Top-level Verilog module (`t1b_cd_fd`) with the specified I/O format.
+- *Description*: Interface the TCS3200 color sensor using Verilog.
+- *Implementation*:  
+  - Configure the *S2* and *S3* control signals to cycle through *Red, **Green, and **Blue* filters.
+  - Measure the frequency of the sensor's PWM output (*OUT* pin) for each filter and detect the corresponding color.
+- *Module*: t1b_cd_fd  
+  - *Inputs*: clk_1MHz, cs_out  
+  - *Outputs*: filter[1:0], color[1:0]
+- *Testbench*: soc_color_detection_tb.v
+- *Deliverable*: Top-level Verilog module (t1b_cd_fd) with the specified I/O format.
 
 ---
 
